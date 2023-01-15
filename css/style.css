@@ -55,6 +55,7 @@
   cursor: pointer;
 
   display: none;
+  z-index: 200;
 }
 
 .icon-mobile-nav {

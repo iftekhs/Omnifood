@@ -19,16 +19,18 @@ const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
     if (ent.isIntersecting === false) {
-      headerEl.classList.add('sticky');
+      document.body.classList.add('sticky');
+      sectionHeroEl;
     }
     if (ent.isIntersecting === true) {
-      headerEl.classList.remove('sticky');
+      document.body.classList.remove('sticky');
     }
   },
   {
     // In the viewport
     root: null,
     threashold: 0,
+    rootMargin: '-80px',
   }
 );
 

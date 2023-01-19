@@ -20,7 +20,6 @@ const obs = new IntersectionObserver(
     const ent = entries[0];
     if (ent.isIntersecting === false) {
       document.body.classList.add('sticky');
-      sectionHeroEl;
     }
     if (ent.isIntersecting === true) {
       document.body.classList.remove('sticky');
